@@ -22,7 +22,7 @@ pip install webdriver_auto_update
 
 ## Configuration
 
-1. Open the script and locate the following variables:
+1. Open the script configure.py and locate the following variables:
 
    - `email`: Enter your Naukri account email here.
    - `password`: Enter your Naukri account password here.
@@ -30,7 +30,7 @@ pip install webdriver_auto_update
 
 2. Set the `cooldown_time` variable:
 
-   - `cooldown_time`: Set the frequency (in seconds) with which you want to update your Naukri profile. For example, if you want to update the profile every 24 hours, set `cooldown_time = 86400`.
+   - `cooldown_time`: Set the frequency (in seconds) with which you want to update your Naukri profile. For example, if you want to update the profile every 1 hours, set `cooldown_time = 3600`.
 
 3. Background Execution:
 
@@ -41,7 +41,7 @@ pip install webdriver_auto_update
 To execute the script, simply run the Python script with the following command:
 
 ```
-python naukri_profile_updater.py
+python main.py
 ```
 
 The script will now automatically log in to your Naukri account using the provided credentials, update the resume headline, and repeat this process at the specified `cooldown_time` interval.
